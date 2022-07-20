@@ -19,7 +19,7 @@ body {
 .todo-title {
     padding: 2rem;
     text-align: center;
-    color: rosybrown;
+    color: #34495e;
     font-size: 5rem;
 }
 
@@ -145,7 +145,7 @@ button {
 }
 
 .button-group button.selected {
-    border: 2px solid rosybrown;
+    border: 2px solid #34495e;
     padding: 0.2rem 0.5rem;
     margin: 0 0.5rem;
     border-radius: 8px;
@@ -170,4 +170,64 @@ p.info {
     margin-top: 1.5rem;
     text-align: center;
     color: #ccc;
+}
+
+/* ================================================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: .5s;
+  color: #34495e;
+}
+
+.material-icons{
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+.bookmark-btt{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #34495e;;
+}
+
+section{
+  background-color: #34495e;
+  color: #fff;
+  width: 200px;
+  padding-top: 30px;
+  padding-left: 30px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  bottom: 0;
+  transition: 1s ease;
+}
+
+.bookmark-lists{
+  padding-left: 45px;
+}
+
+.bookmark{
+  margin: 30px 0;
+}
+
+.bookmark:nth-child(1){
+  margin-top: 50px;
+}
+
+.bookmark a{
+  color: #fff;
+  text-decoration: none;
 }
